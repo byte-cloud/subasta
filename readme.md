@@ -1,0 +1,19 @@
+#WEB APPLICATION FOR ONLINE AUCTIONING SYSTEM
+
+#Problem:
+
+A  few  decades  down the  line,  auctions  were  carried  in  auction  houses  and  the  bids  were  made 
+with  the  auctioneer  delegating  the  bids  and  this  method  required  the  physical  presence  of  the 
+bidders,  thus  it  resulted  in  a  number  of  limitations,  such  as  lack  of  auction  event  awareness, transportation  overheads,wastage of  time, limitation  in varieties  of  products  etc.  Also  from  the seller’s point of view, arrangement of auctioneer and hosting an event leads to unnecessary additional costs.
+
+#Solution:
+
+The  global  reach  of  online  auction  market  places  allows  for the  buyers  and  sellers  to overcome 
+geographical  constraints  and  purchase  products  anytime  from  anywhere  over  the  internet.The online  auction  market  provides the  consumers  with  great  advantages  of  low  prices,  greater product  selection  and  greater  efficiency  compared  to  the usual traditional  offline  markets.The problem that usually arises in online auction is that of the buyer’s uncertainty towards the sellers and their products due to lack of physical evaluation of the products.We tend to implement the solution  by  making  use  of  a decision making  assistance  tool  that  results  in  greater  buyer’s certainty towards their choice of the sellers and the products that they provide.Our aim is to provide a platform where people can search and bid for products that they intend to buy.  We  allow  only  authenticated  users  to  gain  access  over  the  essential  functionalities  of  our website  such  as, proposing  and  raising  the  bids,  etc.Seller  can  start  a  bid  by  lodging  a  request and  providing  the necessary  information  regarding the  product specifications.  All  the  interested buyers will be notified on the start of bid. We analyze interests of users by collecting their click stream data and recording their activitiesby using Hadoop Environment on Cloud. Alsouser can voluntarily add his/her specific interests.We keep all the participants of an active bid constantly updated  regarding  the ongoing  activities  of the  bid.A  particular  time  frame  is  allotted to  a  bid for  it to remain active.After the successful completion of the process, the buyer  is requested to provide proper feedback of the seller and the product which will  help the buyers to evaluate the seller for the next time.
+
+Additionally,  we  provide  a  decision  making  assistance  tool  which  consists  of  3  parts -product information, seller’s rating scores and seller’s shilling activities. Strict  actions  would  be  taken against creation of fake bids and seller’s shillingactivities(an act of introducing fake bids into an auction  on  the  behalf  of  theseller  to  artificially  inflate  the  price  of  an  item).What  this  new system is trying to accomplish is to create a higher level of buyer’s certainty on the type of seller and the products that they choose to make bids for.Apart  from  the  user  interface,italso  contains  an  Administrator  interface  for  effective  and efficient  management  of  users,  products and  bids.Administrator  has  full  access  rights  and authorities  to  take  action  in  case  of  any  dispute,  if  required. Administrator  will  also  collect feedbacks from users and can make necessary update or add new functionalities to the platform.
+
+#Implementation Technologies:
+Web technologies: HTML5, CSS3, Bootstrap, JavaScript, JQuery, Node.js, Express, Mongoose.
+Tools: AWS EC2, AWS S3, Route 53.
+Analytics(Big Data Hadoop): Sqoop, HDFS, Map Reduce, Hive.
