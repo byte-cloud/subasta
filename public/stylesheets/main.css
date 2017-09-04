@@ -35,3 +35,10 @@
     color: lightgray;
     background: #636666;
 }
+
+/* Dropdown item hover efffect */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus .dropdown-menu > li > a:active{
+    color: whitesmoke;
+    cursor: pointer;
+    background: #636666;
+}
