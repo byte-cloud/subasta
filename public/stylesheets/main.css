@@ -5,5 +5,40 @@
 }
 
 .navigation{
-    background-color: #006064;
+    background-color: #333;
+}
+
+.navbar-default .navbar-brand{
+    color: #f3ecec;
+    font-weight: 600;
+    font-size:30px;
+    font-family: 'Inconsolata', monospace;
+}
+.navbar-default .navbar-brand:hover{
+    color: #FFF;
+}
+
+/* Navbar Search form */
+
+
+/* Color for nav items */
+.navbar-default .navbar-nav > li > a{
+    color: lightgray;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: lightgray;
+    background: #636666; 
+}
+
+.navbar-default .navbar-nav > .open > a:focus{
+    color: lightgray;
+    background: #636666;
+}
+
+/* Dropdown item hover efffect */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus .dropdown-menu > li > a:active{
+    color: whitesmoke;
+    cursor: pointer;
+    background: #636666;
 }
