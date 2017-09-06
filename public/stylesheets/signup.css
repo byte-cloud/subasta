@@ -102,9 +102,14 @@ input::placeholder {
   padding-top:10px; 
   color:#fff
 }
+.bodyfoot{
+ background-color:#b4bfbf;
+ /* margin-bottom: -32000px; */
+ padding-bottom: 50%;
+}
 .sfoot a{
   color:whitesmoke;
-  margin-top:10px; 
+  padding-block-start:20px; 
 }
 .sfoot:hover{
   color: white;
