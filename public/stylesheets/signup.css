@@ -74,10 +74,10 @@
 :-moz-placeholder { /* Firefox 18- */
   color: #fff !important;
 }
-.footer {
-  margin-top:40px;
+/* .footer { 
+ margin-top:40px;
   margin-bottom:40px;
-}
+}*/
 input::placeholder {
   color: #fff !important;
 }
@@ -219,3 +219,19 @@ input::placeholder {
 }
 
 /* End of designing gender */
+
+/* Css of signup footer */
+.copyright{
+  padding-top:10px; 
+  color:#fff
+}
+.sfoot a{
+  color:whitesmoke;
+  margin-top:10px; 
+}
+.sfoot:hover{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: floralwhite;
+}
+/* end of signup footer */
