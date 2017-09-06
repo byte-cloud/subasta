@@ -7,6 +7,10 @@ var express = require('express'),
 //mongoose connection
 mongoose.connect("mongodb://localhost/subasta");
 
+//seeding the database
+var seedDB = require('./seeds.js');
+seedDB();
+
 //requiring model
 var Category = require('./models/Categories');
 
