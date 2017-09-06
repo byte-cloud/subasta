@@ -1,8 +1,8 @@
 var express = require('express'),
     app     = express(),
     mongoose = require('mongoose'),
-    bodyParser = require('body-parser'),
-    http = require('http');
+    bodyParser = require('body-parser');
+    // http = require('http');
     
 //mongoose connection
 mongoose.connect("mongodb://localhost/subasta");
@@ -32,10 +32,10 @@ app.use(express.static('public'));
 app.use('/',homeRoutes);
 app.use('/auth',authRoutes);
 
-http.createServer(app).listen(3000,'192.168.43.103',function(){
-    console.log("Subasta now listening on port 3000");
-});
-
-// app.listen(3000, function(){
+// http.createServer(app).listen(3000,'192.168.43.103',function(){
 //     console.log("Subasta now listening on port 3000");
 // });
+
+app.listen(3000, function(){
+    console.log("Subasta now listening on port 3000");
+});
