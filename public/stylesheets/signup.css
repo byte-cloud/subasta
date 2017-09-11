@@ -226,14 +226,14 @@ input::placeholder {
   color:#fff
 }
 .bodyfoot{
- background-color:#b4bfbf;
+ background-color:#627676;
  /* margin-bottom: -32000px; */
- padding-bottom: 50%;
+ /* padding-bottom: 50%; */
 }
 .sfoot a{
-  color:whitesmoke;
-  padding-block-start:20px; 
+  color:white;
 }
+.sfoot{ padding:10px; }
 .sfoot:hover{
   color: white;
   text-decoration: underline;
