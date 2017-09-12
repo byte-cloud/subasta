@@ -28,7 +28,7 @@
 .inside-form{
   border-radius:8px;
   padding-top:30px;
-  padding-bottom:30px;
+  padding-bottom:50px;
 }
 .inside-form h2 {
   font-weight:700;
@@ -81,11 +81,24 @@
 input::placeholder {
   color: #fff !important;
 }
-.btn-lg {
+/* .btn-lg {
   font-size: 1em;
   border-radius: 0.25rem;
   padding: 15px 48px;
+} */
+
+.nextBtn{
+  color: black;
+  background-color: #CCC;
+  border: 0 ;
 }
+
+.nextBtn:hover, .nextBtn:focus, .nextBtn:active{
+  border: 0 ;
+  color: black;
+  background-color: #CCCd;
+}
+
 .btn-round {
   border-width: 1px;
   border-radius: 30px !important;
@@ -96,6 +109,19 @@ input::placeholder {
   color: #333;
 }
 
+.register-btn{
+  color: black;
+  background-color: #CCC;
+  border: 0 ;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+
+.register-btn:hover, .register-btn:focus, .register-btn:active{
+  border: 0 ;
+  color: black;
+  background-color: #CCCd;
+}
 /* For multi step wizard */
 .stepwizard-step p {
   margin-top: 10px;
@@ -141,6 +167,7 @@ input::placeholder {
 .step-button{
   background-color: #333;
   border-color: #333;
+  color: white;
 }
 
 .step-button .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary{
@@ -150,6 +177,7 @@ input::placeholder {
 .step-button:hover{
   background-color: #333;
   border-color: #333;
+  color: white;
 }
 
 /* End of multi step wizard */
