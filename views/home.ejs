@@ -1,3 +1,236 @@
 <% include ./partials/header.ejs %>
+<div class="fullhome"style="background: #5A7171;
+background: -webkit-linear-gradient(to left, #9CB9B9 , #0B1313);
+background: linear-gradient(to left, #9CB9B9 , #0B1313)">
+<div id="myCarousel" class=" container carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS8GoWKxkPpw7Ri7LdEnalh2HkTzqHqXymcEqnZdcErzuAxVRnxQ" alt="Image load" style="width:100%;height:300px" class="img-responsive">
+        </div>
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuC9dTg0JTKyrlhCbK642beCHBwCdQZxZ7QrgwrVa1wHXf6Ji4Mw"alt="Image can't load" style="width:100%;height:300px"class="img-responsive">
+      </div>
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgY5I-KevPVSfxE1dsLI9koY8y9f58Nw4cvL7ivvW-pideQ9Xmkw"alt="Image can't load" style="width:100%;height:300px" class="img-responsive">
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class=" left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="slidecontrol icon-prev"></span>
+    </a>
+    <a class=" right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="slidecontrol icon-next"></span>
+    </a>  
+  </div>
 
+
+
+  <!-- add categories wise items -->
+<div class="container">
+ <div class="row">
+    <div class="col-sm-3" >
+        <span class="thumbnail text-center">
+           <img style="height:220px;"src="data:image/jpeg;base64,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" alt="...">
+              <h4 class="text-danger">Sliver Plating Shoes</h4>
+             <p>Owner's Name : Deepika Padukone</p>
+              <p>Current Bid : Rs.4000</p>
+              <p>Auction End in 5 days</p>
+              <hr class="line">
+             <div class="row">
+             <div class="col-md-4"></div>
+             <div class="col-md-4">
+           <button class="btn btn-danger right" > BID NOW</button>
+             </div>
+             </div>
+             </span>
+        </div>
+        <div class="col-sm-3">
+          <span class="thumbnail text-center">
+                <img style="height:220px;" src="https://afremov.com/image.php?type=P&id=19011" alt="...">
+                <h4 class="text-danger">Scenery</h4>
+                <p>Owner's Name : Leonid Afremov</p>
+                <p>Current Bid : Rs.50000</p>
+                <p>Auction End in 3 days</p>
+                <hr class="line">
+                <div class="row">
+                <div class="col-md-4"></div>
+                 <div class="col-md-4">
+               <button class="btn btn-danger right" > BID NOW</button>
+             </div>
+             </div>
+          </span>
+        </div>
+<div class="col-sm-3">
+    <span class="thumbnail text-center">
+            <img style="height:220px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4yD_RYkQKNj3FH5N0wS_2VUaYGmu-PWPSrUTpXsqXTNj7h2fKaw" alt="...">
+            <h4 class="text-danger">Sports Car</h4>
+            <p>Owner's Name : London Company</p>
+            <p>Current Bid : Rs.4000000</p>
+            <p>Auction End in 1 days</p>
+            <hr class="line">
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+            <button class="btn btn-danger right" > BID NOW</button>
+        </div>
+        </div>
+    </span>
+    </div>
+    <div class="col-sm-3">
+        <span class="thumbnail text-center">
+                <img src="http://placehold.it/350x280" alt="...">
+                <h4 class="text-danger">Sliver Plating Shoes</h4>
+                <p>Owner's Name : Deepika Padukone</p>
+                <p>Current Bid : Rs.40000</p>
+                <p>Auction End in 5 days</p>
+                <hr class="line">
+                <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                <button class="btn btn-danger right" > BID NOW</button>
+            </div>
+            </div>
+        </span>
+        </div>                      
+</div>
+<div class="row">
+<div class="col-sm-3">
+    <span class="thumbnail text-center">
+        <img src="http://placehold.it/350x280" alt="...">
+            <h4 class="text-danger">Sliver Plating Shoes</h4>
+            <p>Owner's Name : Deepika Padukone</p>
+            <p>Current Bid : Rs.40000</p>
+            <p>Auction End in 5 days</p>
+            <hr class="line">
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+        <button class="btn btn-danger right" > BID NOW</button>
+            </div>
+            </div>
+            </span>
+    </div>
+    <div class="col-sm-3">
+        <span class="thumbnail text-center">
+            <img src="http://placehold.it/350x280" alt="...">
+            <h4 class="text-danger">Sliver Plating Shoes</h4>
+            <p>Owner's Name : Deepika Padukone</p>
+            <p>Current Bid : Rs.40000</p>
+            <p>Auction End in 5 days</p>
+            <hr class="line">
+            <div class="row">
+            <div class="col-md-4"></div>
+                <div class="col-md-4">
+            <button class="btn btn-danger right" > BID NOW</button>
+            </div>
+            </div>
+        </span>
+    </div>
+<div class="col-sm-3">
+<span class="thumbnail text-center">
+        <img src="http://placehold.it/350x280" alt="...">
+        <h4 class="text-danger">Sliver Plating Shoes</h4>
+        <p>Owner's Name : Deepika Padukone</p>
+        <p>Current Bid : Rs.40000</p>
+        <p>Auction End in 5 days</p>
+        <hr class="line">
+        <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <button class="btn btn-danger right" > BID NOW</button>
+    </div>
+    </div>
+</span>
+</div>
+<div class="col-sm-3">
+    <span class="thumbnail text-center">
+            <img src="http://placehold.it/350x280" alt="...">
+            <h4 class="text-danger">Sliver Plating Shoes</h4>
+            <p>Owner's Name : Deepika Padukone</p>
+            <p>Current Bid : Rs.40000</p>
+            <p>Auction End in 5 days</p>
+            <hr class="line">
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+            <button class="btn btn-danger right" > BID NOW</button>
+        </div>
+        </div>
+    </span>
+    </div>                      
+</div>
+<div class="row">
+<div class="col-sm-3">
+<span class="thumbnail text-center">
+    <img src="http://placehold.it/350x280" alt="...">
+        <h4 class="text-danger">Sliver Plating Shoes</h4>
+        <p>Owner's Name : Deepika Padukone</p>
+        <p>Current Bid : Rs.40000</p>
+        <p>Auction End in 5 days</p>
+        <hr class="line">
+        <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+    <button class="btn btn-danger right" > BID NOW</button>
+        </div>
+        </div>
+        </span>
+</div>
+<div class="col-sm-3">
+    <span class="thumbnail text-center">
+        <img src="http://placehold.it/350x280" alt="...">
+        <h4 class="text-danger">Sliver Plating Shoes</h4>
+        <p>Owner's Name : Deepika Padukone</p>
+        <p>Current Bid : Rs.40000</p>
+        <p>Auction End in 5 days</p>
+        <hr class="line">
+        <div class="row">
+        <div class="col-md-4"></div>
+            <div class="col-md-4">
+        <button class="btn btn-danger right" > BID NOW</button>
+        </div>
+        </div>
+    </span>
+</div>
+<div class="col-sm-3">
+    <span class="thumbnail text-center">
+            <img src="http://placehold.it/350x280" alt="...">
+            <h4 class="text-danger">Sliver Plating Shoes</h4>
+            <p>Owner's Name : Deepika Padukone</p>
+            <p>Current Bid : Rs.40000</p>
+            <p>Auction End in 5 days</p>
+            <hr class="line">
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+            <button class="btn btn-danger right" > BID NOW</button>
+        </div>
+        </div>
+    </span>
+    </div>
+    <div class="col-sm-3">
+        <span class="thumbnail text-center">
+                <img src="http://placehold.it/350x280" alt="...">
+                <h4 class="text-danger">Sliver Plating Shoes</h4>
+                <p>Owner's Name : Deepika Padukone</p>
+                <p>Current Bid : Rs.40000</p>
+                <p>Auction End in 5 days</p>
+                <hr class="line">
+                <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                <button class="btn btn-danger right" > BID NOW</button>
+            </div>
+            </div>
+        </span>
+        </div>                      
+</div>
+</div>
+</div>
 <% include ./partials/footer.ejs %>
