@@ -225,10 +225,15 @@ input::placeholder {
   padding-top:10px; 
   color:#fff
 }
-.sfoot a{
-  color:whitesmoke;
-  margin-top:10px; 
+.bodyfoot{
+ background-color:#627676;
+ /* margin-bottom: -32000px; */
+ /* padding-bottom: 50%; */
 }
+.sfoot a{
+  color:white;
+}
+.sfoot{ padding:10px; }
 .sfoot:hover{
   color: white;
   text-decoration: underline;
