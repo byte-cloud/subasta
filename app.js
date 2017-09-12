@@ -27,7 +27,7 @@ Category.find({}, function(err, categories){
 //including routes
 var homeRoutes = require('./routes/home');
 var authRoutes = require('./routes/auth');
-var addProductRoutes = require('./routes/add_product');
+var addProductRoutes = require('./routes/addproduct');
     
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -36,7 +36,7 @@ app.use(express.static('public'));
 
 app.use('/',homeRoutes);
 app.use('/auth',authRoutes);
-app.use('/add_product',addProductRoutes);
+app.use('/addproduct',addProductRoutes);
 
 // http.createServer(app).listen(3000,'192.168.43.103',function(){
 //     console.log("Subasta now listening on port 3000");

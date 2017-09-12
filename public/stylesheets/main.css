@@ -7,7 +7,10 @@
 .navigation{
     background-color: #333;
 }
-
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
 .navbar-default .navbar-brand{
     color: #f3ecec;
     font-weight: 600;
@@ -43,7 +46,9 @@
     background: #636666;
 }
 
-
+.searchbar{
+	
+}
 .footer {
 	background: #333;
 	height: auto;
@@ -102,17 +107,3 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-/* Css of signup footer */
-.copyright{
-    padding-top:10px; 
-    color:#fff
-}
-.sfoot{
-    color:#fff;
-}
-.sfoot:hover{
-    text-decoration: underline;
-    text-decoration-color: floralwhite;
-}
-/* end of signup footer */

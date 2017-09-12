@@ -1,0 +1,54 @@
+   .section-content{
+    text-align: center; 
+  }
+  #contact{
+     font-family: 'Teko', sans-serif;
+   padding-top: 60px; 
+    width: 100%;
+    width: 100vw;
+    background: #5A7171; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #9CB9B9 , #0B1313); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #9CB9B9 , #0B1313); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color : #fff;    
+  }
+  .contact-section .col-md-6{
+    width: 50%;
+  }
+  .add .col-md-3{
+    text-align: center;
+  }
+  .add label{
+    font-size: 1.3em;
+    /* line-height: 1em; */
+    font-weight: normal;
+  }
+  .add .form-control {
+    font-size: 1.3em;
+    color: #080808;
+    border-radius: 0px;
+    display:block; 
+  }
+  .add .form-control:hover{
+    border-radius: 0px;
+  }
+  .add .form-control:focus{
+    border-radius: 0px;
+  }
+  .add textarea.form-control {
+      height: 135px;
+  }
+  .add .btn .btn-primary:hover  .btn-primary:focus  .btn-primary:active  .open  .dropdown-toggle  {
+  color: #fff;
+  background-color: #767070;
+  border-color: #767070; 
+}
+
+#create_bid_btn:hover{
+  color: purple;
+}
+
+.add .btn .btn-primary{
+color: #fff;
+background-color: #767070;
+border-color: #767070;
+}

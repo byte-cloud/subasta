@@ -1,0 +1,178 @@
+<% include ./partials/header.ejs %>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+<section id="contact">
+ <div class="contact-section">
+ <div class="container">
+   <form class="form-horizontal">
+     <div class="col-md-2"></div></label> 
+     <div class="col-md-8 form-group">
+         <div class=" form-group">
+            <label class="add col-md-3"for="title">Title</label>
+            <div class="col-md-9"><input type="text" class="add form-control" id="title"required placeholder=" Enter Title"></div>
+        </div>
+        <div class=" form-group">
+            <label  class="add col-md-3" for="category">Categories</label>
+            <div class=" col-md-9"><select id="category" required class=" form-control">
+              <% categories.forEach(function(category){%>
+                  <option class="add addproduct"><%= category.name %></option>
+              <% }); %>
+            </select></div>
+        </div>
+        <div class=" form-group">
+          <label class="add col-md-3"for ="description"> Product Discription</label>
+          <div class=" col-md-9"> <textarea  class="add form-control" id="description" required placeholder="Enter Your product's discription"></textarea></div>
+        </div>
+        <div class=" form-group">
+          <label class="add col-md-3"for="quantity">Quantity</label>
+          <div class=" col-md-9">  <input type="text" class="add form-control" id="quantity"required  placeholder=" Enter quantity"></div>
+      </div>
+        <div class=" form-group">
+            <label class="add col-md-3"for="time">Time</label>
+            <div class=" col-md-9">  <input type="time" class="add form-control" id="time" required placeholder=" Enter time"></div>
+        </div>       
+         <div class=" form-group">
+            <label class="add col-md-3"for="price">Price</label>
+            <div class=" col-md-9"> <input type="number" min="100"class="add form-control" id="price"required placeholder="100"></div>
+        </div>
+        <div class=" form-group">
+            <label class="add col-md-3"for="currentbid">Current Bid</label>
+            <div class="col-md-9"> <input type="text" class="add form-control" id="currentbid" required placeholder=" Enter current-bid"></div>
+        </div>
+        <div class="form-group">
+            <label class="add col-md-3" for="comment">Comment</label>
+            <div class="col-md-9"> <input type="text" class="add form-control" id="comment" placeholder=" Enter your views"></div>
+        </div>
+         <div class="form-group">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"> <input id="upload_btn" name="upload_btn" class="input-file" aria-hidden="true" type="file"></div>
+          
+         </div>
+         <div class="form-group">
+           <div class="col-md-4"></div>
+           <div class="col-md-4"> <button id="create_bid_btn" class="add btn btn-primary">CREATE BID</button></div>
+          </div>
+      </div>   
+   </form>
+  </div>
+
+ </div>
+</section>
+<% include ./partials/signfoot.ejs %>
+
+<!-- <div class="add_product_container">
+  
+  <form class="form-horizontal"> -->
+      <!-- <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button> -->
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="product_id" name="product_id" placeholder="PRODUCT ID" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="title" name="title" placeholder="TITLE" class="add_product form-control input-md" required="" type="text">
+  
+    </div>
+  </div> -->
+  
+  <!-- Select Basic -->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+      <select id="category" name="category" class="add_product form-control">
+          <% categories.forEach(function(category){%>
+              <option><%= category.name %></option>
+          <% }); %>
+      </select>
+    </div>
+  </div> -->
+  
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="time" name="time" placeholder="TIME" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+  <!-- Textarea -->
+  <!-- <div class="form-group">
+    <div class="col-md-4">                     
+      <textarea class="add_product form-control" id="product_description" name="product_description"></textarea>
+    </div>
+  </div> -->
+  
+  
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="price" name="price" placeholder="PRICE" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="current_bid" name="current_bid" placeholder="CURRENT BID" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+  <!-- Text input -->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="time_remaining" name="time_remaining" placeholder="TIME REMAINING" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="quantity" name="quantity" placeholder="QUANTITY" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="enable_display" name="enable_display" placeholder="ENABLE DISPLAY" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+  <!-- Text input-->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+    <input id="comment" name="comment" placeholder="COMMENT" class="add_product form-control input-md" required="" type="text">
+      
+    </div>
+  </div> -->
+  
+      
+   <!-- File Button --> 
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+      <input id="upload_btn" name="upload_btn" class="input-file" type="file">
+    </div>
+  </div> -->
+  
+  <!-- Button -->
+  <!-- <div class="form-group">
+    <div class="col-md-4">
+      <button id="create_bid_btn" name="create_bid_btn" class="btn btn-primary">CREATE BID</button>
+    </div>
+    </div>
+  
+  </form>
+  
+  </div> --> 
