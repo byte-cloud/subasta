@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var product = require('./Product');
 
 var userSchema = new mongoose.Schema({
         name: String,
@@ -13,6 +14,7 @@ var userSchema = new mongoose.Schema({
         gender: String,
         dob: String,
         password: String,
-        items_sold: [Product],
-        
+        items_sold: [{type:mongoose.Schema.Types.ObjectId,
+                ref: product
+        }],        
 });

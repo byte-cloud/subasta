@@ -7,16 +7,16 @@
 <section id="contact">
  <div class="contact-section">
  <div class="container">
-   <form class="form-horizontal" method="post">
+   <form class="form-horizontal" method="post" action="/addproduct">
      <div class="col-md-2"></div></label> 
      <div class="col-md-8 form-group">
          <div class=" form-group">
             <label class="add col-md-3"for="title">Title</label>
-            <div class="col-md-9"><input type="text" class="add form-control" id="title"required placeholder=" Enter Title"></div>
+            <div class="col-md-9"><input type="text" class="add form-control" name="title" id="title"required placeholder="Enter Title"></div>
         </div>
         <div class=" form-group">
             <label  class="add col-md-3" for="category">Categories</label>
-            <div class=" col-md-9"><select id="category" required class=" form-control">
+            <div class=" col-md-9"><select id="category" name="category" required class=" form-control">
               <% categories.forEach(function(category){%>
                   <option class="add addproduct"><%= category.name %></option>
               <% }); %>
@@ -24,27 +24,27 @@
         </div>
         <div class=" form-group">
           <label class="add col-md-3"for ="description"> Product Discription</label>
-          <div class=" col-md-9"> <textarea  class="add form-control" id="description" required placeholder="Enter Your product's discription"></textarea></div>
+          <div class=" col-md-9"> <textarea  class="add form-control" name="description" id="description" required placeholder="Enter Your product's discription"></textarea></div>
         </div>
         <div class=" form-group">
           <label class="add col-md-3"for="quantity">Quantity</label>
-          <div class=" col-md-9">  <input type="text" class="add form-control" id="quantity"required  placeholder=" Enter quantity"></div>
+          <div class=" col-md-9">  <input type="text" class="add form-control" name="quantity" id="quantity"required  placeholder=" Enter quantity"></div>
       </div>
         <div class=" form-group">
             <label class="add col-md-3"for="time">Time</label>
-            <div class=" col-md-9">  <input type="time" class="add form-control" id="time" required placeholder=" Enter time"></div>
+            <div class=" col-md-9">  <input type="time" class="add form-control" name="time" id="time" required placeholder=" Enter time"></div>
         </div>       
          <div class=" form-group">
             <label class="add col-md-3"for="price">Price</label>
-            <div class=" col-md-9"> <input type="number" min="100"class="add form-control" id="price"required placeholder="100"></div>
+            <div class=" col-md-9"> <input type="number" min="100"class="add form-control" name="price" id="price"required placeholder="100"></div>
         </div>
         <div class=" form-group">
             <label class="add col-md-3"for="currentbid">Current Bid</label>
-            <div class="col-md-9"> <input type="text" class="add form-control" id="currentbid" required placeholder=" Enter current-bid"></div>
+            <div class="col-md-9"> <input type="text" class="add form-control" name="current_bid" id="currentbid" required placeholder=" Enter current-bid"></div>
         </div>
         <div class="form-group">
             <label class="add col-md-3" for="comment">Comment</label>
-            <div class="col-md-9"> <input type="text" class="add form-control" id="comment" placeholder=" Enter your views"></div>
+            <div class="col-md-9"> <input type="text" class="add form-control" name="comment" id="comment" placeholder=" Enter your views"></div>
         </div>
          <div class="form-group">
             <div class="col-md-4"></div>
