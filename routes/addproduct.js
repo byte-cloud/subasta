@@ -5,4 +5,8 @@ router.get('/', function(req, res){
 res.render("addproduct");
 });
 
+router.post('/:user_id/', function(req, res){
+    var  
+});
+
 module.exports = router;

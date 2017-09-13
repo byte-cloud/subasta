@@ -12,6 +12,7 @@ var productSchema = new mongoose.Schema({
         time_remaining: String,
         quantity: Number,
         bids: Number,
+        image_path: String,
 });
 
 module.exports = mongoose.model("Products", productSchema);
