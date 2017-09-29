@@ -12,70 +12,49 @@ var express     = require('express'),
 //     res.redirect('/');
 // };
 
-// module.exports = function(passport){
-    //redirect to login page
-    router.get('/login', function(req, res){
-        res.render('login');
-    });
+//redirect to login page
+router.get('/login', function(req, res){
+    res.render('login');
+});
 
-    //redirect to signup page
-    router.get('/register', function(req, res){
-        res.render('signup');
-    });
+//redirect to signup page
+router.get('/register', function(req, res){
+    res.render('signup');
+});
 
-    // logic for register
-
-    router.post('/register', function(req, res){
-        var newUser = new User({username: req.body.username});
-        User.register(newUser, req.body.password, function(err, user){
-            if(err){
-                console.log(err);
-                return res.redirect('/auth/register');
-            }
-            passport.authenticate('local')(req, res, function(){
+// logic for register
+router.post('/register', function(req, res){
+    var newUser = new User({username: req.body.username});
+    User.register(newUser, req.body.password, function(err, user){
+        if(err){
+            console.log(err);
+            return res.redirect('/auth/register');
+        }
+        passport.authenticate('local')(req, res, function(){
+            User.findOneAndUpdate({mobileNo:req.body.mobileNo},req.body.user, function(err, updatedUser)
+            {
+                if(err)
+                {
+                    console.log(err);
+                    return;
+                }
                 res.redirect('/');
             });
         });
     });
+});
 
+// logic for login
+router.post('/login',passport.authenticate('local',{
+    successRedirect : "/",
+    failureRedirect: "/auth/login"
+}), function(req, res) {   
+});
 
-    // router.post('/register', passport.authenticate('signup',{
-    //     successRedirect: '/',
-    //     failureRedirect: '/auth/register'
-    // }));
+// logic for logout
+router.get('/logout', function(req, res){
+    req.logout();
+    res.redirect('/');
+});
 
-    // logic for login
-    router.post('/login',passport.authenticate('local',{
-        successRedirect : "/",
-        failureRedirect: "/auth/login"
-    }), function(req, res) {   
-    });
-    // router.post('/login', passport.authenticate('login',{
-    //     successRedirect: "/",
-    //     failureRedirect: '/auth/login'
-    // }));
-
-    router.get('/logout', function(req, res){
-        req.logout();
-        res.redirect('/');
-    });
-
-    module.exports = router;
-    // return router;
-// }
-
-
-// router.post('/register', function(req, res){
-//     User.register(req.body.user, req.body.password, function(err, user){
-//         if(err){
-//             console.log(err);
-//             res.redirect('/auth/register');
-//         }
-//         console.log("Done with signup")
-//         passport.authenticate('local')(req, res, function(){
-//             res.redirect('/');
-//             console.log("Now its fine!");
-//         });
-//     });
-// });
-
+module.exports = router;

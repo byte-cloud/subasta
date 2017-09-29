@@ -9,7 +9,7 @@ var userSchema = new mongoose.Schema({
         state: String,
         pincode: String,
         landmark: {type: String, required: false},
-        mobileNo: String,
+        name: String,
         email: String,
         gender: String,
         dob: String,
@@ -18,3 +18,4 @@ var userSchema = new mongoose.Schema({
 
 userSchema.plugin(passportLocalMongoose);
 module.exports = mongoose.model("User", userSchema);
+
