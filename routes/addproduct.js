@@ -49,7 +49,11 @@ router.post('/', function(req, res){
             return;
         }
         console.log("Product Added!!");
-    })
+    });
+});
+
+
+router.post('/:user_id/', function(req, res){
 });
 
 module.exports = router;
