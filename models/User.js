@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var product = require('./Product');
 var passportLocalMongoose = require('passport-local-mongoose');
 
 var userSchema = new mongoose.Schema({
@@ -13,7 +14,10 @@ var userSchema = new mongoose.Schema({
         email: String,
         gender: String,
         dob: String,
-        password: String,        
+        password: String,
+        items_sold: [{type:mongoose.Schema.Types.ObjectId,
+                ref: product
+        }],        
 });
 
 userSchema.plugin(passportLocalMongoose);
