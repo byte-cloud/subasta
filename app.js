@@ -34,8 +34,6 @@ app.use(passport.session());
 passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-// var initpassport = require('./passport/init');
-// initpassport(passport);
 
 // Static data for all views
 app.use(function(req, res, next){
