@@ -4,7 +4,7 @@ var Product = require('../models/Product');
 var fs = require('fs');
 var path = require('path');
 var AWS = require('aws-sdk');
-AWS.config.loadFromPath('../config.json');
+AWS.config.loadFromPath('./config.json');
 
 var s3 = new AWS.s3();
 var uploadParams = {Bucket:'subasta', Key:'', Body:''};
