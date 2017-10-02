@@ -268,3 +268,18 @@ input::placeholder {
   text-decoration-color: floralwhite;
 }
 /* end of signup footer */
+
+
+.login-btn{
+  background-color: #CCC;
+  color: black;
+  margin-left: 35%;
+  margin-top: 10px;
+}
+
+
+.login-btn:hover,.login-btn:active, .login-btn:focus {
+  background-color: #CCCd;
+  color: black;
+  margin-left: 35%;
+}

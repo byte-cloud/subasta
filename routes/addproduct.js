@@ -6,7 +6,6 @@ res.render("addproduct");
 });
 
 router.post('/:user_id/', function(req, res){
-
 });
 
 module.exports = router;
