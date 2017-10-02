@@ -1,5 +1,33 @@
 <% include ./partials/header %>
 
+<div class="container">
+    <div>
+        <div class="container-fluid stylish-form">
+            <div class="row mar20" >
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="inner-section">
+                        <form action="/auth/login" method="POST">
+                            <div class="mar20 inside-form">
+                                <h2 class="font_white text-center signup-text">LOGIN</h2>
+                                <!--Phone no -->
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                    <input type="tel" class="form-control" name="username" placeholder="Phone No..." required>
+                                </div>
+                                <!--Password -->
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock "></i></span>
+                                    <input type="password" class="form-control" name="password" placeholder="Password..." required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-md btn-primary register-btn">REGISTER</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <% include ./partials/signfoot %>
